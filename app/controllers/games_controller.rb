@@ -18,7 +18,7 @@ class GamesController < ApplicationController
     elsif !dict_test?(@attempt)
       @message = "Sorry but #{@attempt} doesn't seem to be a valid Englsih word"
     else
-      @message = "Congratulations! #{attempt} is a valid English word!"
+      @message = "Congratulations! #{@attempt} is a valid English word!"
     end
   end
 
